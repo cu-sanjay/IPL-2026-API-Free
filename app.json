@@ -1,0 +1,7 @@
+{
+    "name": "IPL 2026 Cricket API",
+    "description": "Free, open-source IPL statistics API (schedule, points table, live scores, squads, winners).",
+    "repository": "https://github.com/cu-sanjay/",
+    "logo": "https://i.ibb.co/ftzHwQB/logo.png",
+    "keywords": ["ipl", "cricket", "api", "live-stats", "ipl-2026"]
+}

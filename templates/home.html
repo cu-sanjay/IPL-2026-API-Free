@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL {{ season }} API by Sannjay</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://i.ibb.co/dsSmmT2Q/sanjay.png" alt="IPL API Logo" class="logo">
+                <h1 class="header-title">IPL {{ season }} API</h1>
+            </div>
+            <nav class="nav-container">
+                <a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="https://github.com/cu-sanjay" target="_blank" class="nav-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#documentation" class="nav-link"><i class="fas fa-book"></i> Docs</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="intro-container">
+            <h2 class="section-title">IPL {{ season }} API</h2>
+            <p class="intro-text">A free, open-source IPL data API. All endpoints return JSON.</p>
+        </section>
+
+        <section class="endpoint-container">
+            <h3 class="endpoint-title">Endpoints</h3>
+
+            <div class="endpoint-section">
+                <h4 class="endpoint-name">/ipl-{{ season }}-schedule</h4>
+                <p class="endpoint-desc">Returns the IPL {{ season }} match schedule. Alias: <code>/ipl-schedule</code></p>
+                <a href="/ipl-{{ season }}-schedule" target="_blank" class="test-button">Test Endpoint</a>
+            </div>
+
+            <div class="endpoint-section">
+                <h4 class="endpoint-name">/ipl-{{ season }}-points-table</h4>
+                <p class="endpoint-desc">Current IPL {{ season }} points table. Alias: <code>/ipl-points-table</code></p>
+                <a href="/ipl-{{ season }}-points-table" target="_blank" class="test-button">Test Endpoint</a>
+            </div>
+
+            <div class="endpoint-section">
+                <h4 class="endpoint-name">/ipl-{{ season }}-live-score</h4>
+                <p class="endpoint-desc">Live scores from Sportskeeda.</p>
+                <a href="/ipl-{{ season }}-live-score" target="_blank" class="test-button">Test Endpoint</a>
+            </div>
+
+            <div class="endpoint-section">
+                <h4 class="endpoint-name">/ipl-{{ season }}-live-score-s2</h4>
+                <p class="endpoint-desc">Live scores from Crex.</p>
+                <a href="/ipl-{{ season }}-live-score-s2" target="_blank" class="test-button">Test Endpoint</a>
+            </div>
+
+            <div class="endpoint-section">
+                <h4 class="endpoint-name">/ipl-{{ season }}-live-score-s3</h4>
+                <p class="endpoint-desc">Live scores from Cricbuzz.</p>
+                <a href="/ipl-{{ season }}-live-score-s3" target="_blank" class="test-button">Test Endpoint</a>
+            </div>
+
+            <div class="endpoint-section">
+                <h4 class="endpoint-name">/squad/&lt;team_code&gt;</h4>
+                <p class="endpoint-desc">Team squad details. Codes: mi, rcb, csk, dc, pbks, kkr, rr, srh, gt, lsg.</p>
+                <a href="/squad/mi" target="_blank" class="test-button">Test Endpoint</a>
+            </div>
+
+            <div class="endpoint-section">
+                <h4 class="endpoint-name">/ipl-winners</h4>
+                <p class="endpoint-desc">Historical IPL winners (2008–present).</p>
+                <a href="/ipl-winners" target="_blank" class="test-button">Test Endpoint</a>
+            </div>
+
+            <div class="endpoint-section">
+                <h4 class="endpoint-name">/health</h4>
+                <p class="endpoint-desc">Service health check.</p>
+                <a href="/health" target="_blank" class="test-button">Test Endpoint</a>
+            </div>
+        </section>
+
+        <section id="documentation" class="doc-container">
+            <h3 class="doc-title">Documentation</h3>
+            <p>Free IPL {{ season }} API. MIT License.</p>
+            <p>Use any HTTP client, e.g. curl:</p>
+            <pre>curl http://localhost:5000/ipl-{{ season }}-points-table</pre>
+            <p>Team codes: mi, rcb, csk, dc, pbks, kkr, rr, srh, gt, lsg</p>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <p>© {{ season }} Sannjay - IPL {{ season }} API</p>
+    </footer>
+</body>
+</html>

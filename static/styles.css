@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.header-container {
+    background: url('https://staticg.sportskeeda.com/editor/2024/05/732b3-17164454069116.png?h=520') no-repeat center center;
+    background-size: 200px;
+    background-color: #1a2a6c;
+    opacity: 0.7;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.header-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-link i {
+    margin-right: 0.3rem;
+}
+
+/* Main Content */
+.main-container {
+    max-width: 1200px;
+    margin: 20px auto 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Introduction */
+.intro-container {
+    text-align: center;
+    padding: 1.5rem;
+    background: #fff;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a2a6c;
+    margin-bottom: 0.5rem;
+}
+
+.intro-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.link {
+    color: #b22222; 
+    text-decoration: underline;
+}
+
+/* Endpoints */
+.endpoint-container {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.endpoint-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a2a6c;
+    margin-bottom: 1rem;
+}
+
+.endpoint-section {
+    margin-bottom: 2rem;
+}
+
+.endpoint-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.endpoint-desc {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.endpoint-sample {
+    background: #f5f5f5;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #333;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    margin-bottom: 0.5rem;
+}
+
+.test-button {
+    display: inline-block;
+    background: #b22222;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+}
+
+/* Documentation */
+.doc-container {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+.doc-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a2a6c;
+    margin-bottom: 1rem;
+}
+
+.doc-container p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.doc-container pre {
+    background: #f5f5f5;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #333;
+    overflow-x: auto;
+}
+
+/* Footer */
+.footer-container {
+    text-align: center;
+    padding: 1rem;
+    background: #1a2a6c;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .nav-container {
+        gap: 1rem;
+    }
+
+    .main-container {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .endpoint-title, .doc-title {
+        font-size: 1.5rem;
+    }
+
+    .endpoint-name {
+        font-size: 1.2rem;
+    }
+
+    .endpoint-desc, .doc-container p {
+        font-size: 0.9rem;
+    }
+
+    .endpoint-sample, .doc-container pre {
+        font-size: 0.85rem;
+    }
+
+    .test-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .main-container {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 0.75rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .main-container {
+        padding: 0 0.5rem;
+        margin-top: 15px;
+    }
+
+    .intro-container, .endpoint-container, .doc-container {
+        padding: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
